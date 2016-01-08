@@ -10,16 +10,6 @@ matrix:
 install: go get -v github.com/spf13/hugo
 before_script: git clone --depth 1 --recursive https://github.com/digitalcraftsman/hugo-creative-theme themes/creative
 script: hugo -v --buildDrafts
-notifications:
-  email:
-    recipients:
-      - aralston@gravie.com
-    on_success: change
-    on_failure: always
-    branches:
-  only:
-    - master
-    - develop
 deploy:
   provider: s3
   access_key_id: AKIAJQPTPQ35QIERGK4Q
@@ -30,3 +20,13 @@ deploy:
   acl: public_read
   on:
     repo: pherris/gravie-corp
+notifications:
+  email:
+    recipients:
+      - aralston@gravie.com
+    on_success: change
+    on_failure: always
+    branches:
+  only:
+    - master
+    - develop
