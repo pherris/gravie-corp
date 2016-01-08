@@ -10,6 +10,7 @@ matrix:
 install: go get -v github.com/spf13/hugo
 before_script: git clone --depth 1 --recursive https://github.com/digitalcraftsman/hugo-creative-theme themes/creative
 script: hugo -v --buildDrafts
+skip_cleanup: true
 deploy:
   provider: s3
   access_key_id: AKIAJQPTPQ35QIERGK4Q
