@@ -1,6 +1,6 @@
 baseurl = "https://s3.amazonaws.com/gravie-test/"
 languageCode = "en-us"
-title = "Hugo Creative Theme"
+title = "Gravie Web Site"
 theme = "creative"
 
 [params]
@@ -40,7 +40,7 @@ theme = "creative"
 	# Hero section
 	[params.hero]
 		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
-		slogan     = "Your awesome slogan"
+		slogan     = "Insurance Independence"
 		subtitle   = "[Lorem](//google.com) ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis nesciunt consequatur ut nihil voluptatem fugiat eos eveniet alias in veniam?"
 		buttonText = "Find out more"
 
