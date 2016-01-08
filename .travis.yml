@@ -9,6 +9,7 @@ matrix:
   allow_failures:
     - go: tip
 install: go get -v github.com/spf13/hugo
+before_script: git clone --depth 1 --recursive https://github.com/digitalcraftsman/hugo-creative-theme themes/creative
 script: hugo -v --buildDrafts
 notifications:
   email:
