@@ -1,4 +1,8 @@
-language: javascript
+language: go
+go:
+  - 1.3
+install: go get -v github.com/spf13/hugo
+script: hugo --buildDrafts
 deploy:
   provider: s3
   access_key_id: AKIAJQPTPQ35QIERGK4Q
